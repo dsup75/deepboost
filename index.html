@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS — Deependra Shakya | Digital Marketing & Performance Marketing Specialist</title>
+    <meta name="description" content="Performance marketing campaigns backed by real data, measurable growth, and conversion-focused strategy. Portfolio of Deependra Shakya (DS).">
+    <meta name="keywords" content="Digital Marketing, Performance Marketing, Meta Ads, Google Ads, Deependra Shakya, Marketing Case Studies, Conversion Rate Optimization">
+    <meta name="author" content="Deependra Shakya">
+    <link rel="canonical" href="https://deependrashakya.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deependrashakya.com/">
+    <meta property="og:title" content="DS — Deependra Shakya | 3D Digital Marketing Portfolio">
+    <meta property="og:description" content="Performance marketing campaigns backed by real data and conversion-focused strategy.">
+    <meta property="og:image" content="https://deependrashakya.com/assets/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DS — Deependra Shakya | Digital Marketing Portfolio">
+    <meta name="twitter:description" content="Performance marketing campaigns backed by real data and conversion-focused strategy.">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v3 Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              obsidian: {
+                DEFAULT: '#0A0A0D',
+                card: '#121318',
+                border: '#222530',
+                light: '#181A22'
+              },
+              gold: {
+                DEFAULT: '#F3C623',
+                light: '#FFD700',
+                glow: 'rgba(243, 198, 35, 0.35)',
+                subtle: 'rgba(243, 198, 35, 0.12)'
+              },
+              emerald: {
+                DEFAULT: '#00F5D4',
+                dark: '#0D5E5E',
+                glow: 'rgba(0, 245, 212, 0.3)',
+                subtle: 'rgba(0, 245, 212, 0.1)'
+              },
+              textMain: '#F8F9FA',
+              textMuted: '#94A3B8'
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['DM Sans', 'sans-serif'],
+              mono: ['DM Mono', 'monospace'],
+            },
+            boxShadow: {
+              'glow-gold': '0 0 35px rgba(243, 198, 35, 0.25)',
+              'glow-emerald': '0 0 35px rgba(0, 245, 212, 0.22)',
+              'card-dark': '0 15px 35px -10px rgba(0, 0, 0, 0.8)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- React 18 & Babel Standalone -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Three.js (WebGL 3D Engine) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Structured Data / JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://deependrashakya.com/#person",
+          "name": "Deependra Shakya",
+          "alternateName": "DS",
+          "jobTitle": "Digital Marketing Specialist & Performance Marketer",
+          "knowsAbout": ["Performance Marketing", "Meta Ads", "Google Ads", "Conversion Rate Optimization", "Lead Generation", "Digital Strategy"],
+          "url": "https://deependrashakya.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://deependrashakya.com/#website",
+          "url": "https://deependrashakya.com",
+          "name": "DS Digital Marketing Portfolio",
+          "publisher": { "@id": "https://deependrashakya.com/#person" }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      body {
+        background-color: #0A0A0D;
+        color: #F8F9FA;
+        font-family: 'DM Sans', sans-serif;
+        overflow-x: hidden;
+      }
+      .font-serif { font-family: 'Playfair Display', serif; }
+      .font-mono { font-family: 'DM Mono', monospace; }
+
+      /* Dark Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0A0A0D; }
+      ::-webkit-scrollbar-thumb { background: #F3C623; border-radius: 3px; }
+
+      /* 3D Flip Card Styles */
+      .perspective-1000 { perspective: 1000px; }
+      .transform-style-3d { transform-style: preserve-3d; }
+      .backface-hidden {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      .rotate-y-180 { transform: rotateY(180deg); }
+
+      /* Cyber Dark Grid Pattern */
+      .bg-dark-grid {
+        background-size: 40px 40px;
+        background-image: 
+          linear-gradient(to right, rgba(248, 249, 250, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(248, 249, 250, 0.03) 1px, transparent 1px);
+      }
+
+      /* Glassmorphism Dark Card */
+      .glass-obsidian {
+        background: rgba(18, 19, 24, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(243, 198, 35, 0.2);
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 8px rgba(243, 198, 35, 0.6)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 20px rgba(0, 245, 212, 0.8)); }
+      }
+      .animate-neon-glow { animation: pulseGlow 4s infinite ease-in-out; }
+    </style>
+</head>
+<body class="bg-obsidian text-textMain">
+    <div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useMemo } = React;
+
+/*
+  <!-- REPLACE BRAND LOGO AT: /assets/brand/ds-logo.png -->
+  <!-- REPLACE PROFILE PORTRAIT AT: /assets/profile/deependra-shakya.webp -->
+  <!-- REPLACE CLIENT HERO IMAGE AT: /assets/clients/{slug}/hero.webp -->
+*/
+
+// ==========================================
+// CLIENT METRICS DATABASE (VERIFIED REAL DATA)
+// ==========================================
+const CLIENTS_DATA = [
+  {
+    id: 'solar-ji',
+    slug: 'solar-ji',
+    name: 'Solar Ji',
+    industry: 'Solar Energy',
+    status: 'Active',
+    spend: '₹35,587',
+    spendRaw: 35587,
+    impressions: '681K',
+    reach: '339K',
+    clicks: '7,883',
+    ctr: '1.16%',
+    cpm: '₹52',
+    leads: '167',
+    leadsRaw: 167,
+    conversions: '49',
+    cpl: '₹213',
+    efficiency: 92,
+    category: 'Solar',
+    desc: 'Scalable lead generation infrastructure for residential and commercial solar adoption.',
+    objective: 'High-intent lead acquisition and Cost Per Lead optimization across tier-1 regional markets.',
+    learnings: [
+      'Localized ad creative emphasizing solar subsidy benefits boosted CTR by 34% in suburban regions.',
+      'Custom WhatsApp lead capture forms outperformed traditional web forms by 2.2x in completion rate.',
+      'Excluding low-intent traffic during peak evening hours reduced CPL from ₹285 down to ₹213.',
+      'Lookalike audiences built from verified customer phone lists drove 42% of total conversions.'
+    ]
+  },
+  {
+    id: 'sahu-motors',
+    slug: 'sahu-motors',
+    name: 'Sahu Motors',
+    industry: 'Automotive',
+    status: 'Active',
+    spend: '₹52,154',
+    spendRaw: 52154,
+    impressions: '1.35M',
+    reach: '827K',
+    clicks: '25,379',
+    ctr: '1.87%',
+    cpm: '₹38',
+    leads: '719',
+    leadsRaw: 719,
+    conversions: '320',
+    cpl: '₹72.54',
+    efficiency: 98,
+    category: 'Automotive',
+    desc: 'Hyper-local paid search and Meta funnel driving showroom test drives and qualified buyers.',
+    objective: 'Maximize showroom footfall and test-drive bookings through targeted geo-fencing campaigns.',
+    learnings: [
+      'Video ads showcasing inventory walkthroughs achieved an industry-leading 1.87% CTR.',
+      'Radius targeting within 15km of physical dealerships generated 80% of confirmed test-drive leads.',
+      'Automated SMS follow-ups within 5 minutes increased lead-to-showroom conversion to 44.5%.',
+      'Dynamic inventory ads automatically showcasing available models lowered overall CPL to ₹72.54.'
+    ]
+  },
+  {
+    id: 'gg-organic',
+    slug: 'gg-organic',
+    name: 'GG Organic',
+    industry: 'Organic Products',
+    status: 'Active',
+    spend: '₹567',
+    spendRaw: 567,
+    impressions: '15K',
+    reach: '14K',
+    clicks: '182',
+    ctr: '1.19%',
+    cpm: '₹39',
+    leads: '2',
+    leadsRaw: 2,
+    conversions: '—',
+    cpl: '₹283.89',
+    efficiency: 65,
+    category: 'E-Commerce',
+    desc: 'Initial micro-test campaign establishing audience baseline and direct product demand.',
+    objective: 'Evaluate cost per click and initial interest for organic skincare product line.',
+    learnings: [
+      'Micro-test validated strong ad engagement with 1.19% CTR at very low test budget.',
+      'Identified women aged 25-40 in metro cities as highest converting micro-segment.',
+      'Single-item carousel creative outperformed multi-product showcases.',
+      'Recommendations prepared for scaling budget once e-commerce checkout funnel is optimized.'
+    ]
+  },
+  {
+    id: 'kalpana-solar',
+    slug: 'kalpana-solar-traders',
+    name: 'Kalpana Solar Traders',
+    industry: 'Solar Energy',
+    status: 'Active',
+    spend: '₹8,559',
+    spendRaw: 8559,
+    impressions: '275K',
+    reach: '131K',
+    clicks: '3,254',
+    ctr: '1.18%',
+    cpm: '₹31',
+    leads: '—',
+    leadsRaw: 0,
+    conversions: '93 Call Convs',
+    cpl: '—',
+    efficiency: 88,
+    category: 'Solar',
+    desc: 'Direct-response phone call generation for high-value commercial solar tenders.',
+    objective: 'Drive direct phone inquiries from business owners and industrial plant managers.',
+    learnings: [
+      'Click-to-Call ad formats delivered 93 high-value phone consultations directly to sales engineers.',
+      'Ultra-efficient ₹31 CPM achieved through precise business owner demographic filtering.',
+      'B2B decision-makers responded best to ad copy highlighting immediate ROI and tax depreciation advantages.',
+      'Call scheduling restricted strictly to business working hours eliminated wasted ad spend.'
+    ]
+  },
+  {
+    id: 'gdfl',
+    slug: 'gdfl',
+    name: 'GDFL',
+    industry: 'Digital Marketing / B2B',
+    status: 'Completed',
+    spend: '₹101,722',
+    spendRaw: 101722,
+    impressions: '56K',
+    reach: '33K',
+    clicks: '912',
+    ctr: '1.63%',
+    cpm: '₹1.8K',
+    leads: '140',
+    leadsRaw: 140,
+    conversions: '—',
+    cpl: '₹727',
+    efficiency: 82,
+    category: 'B2B',
+    desc: 'Premium B2B executive funnel targeting enterprise decision-makers and growth leaders.',
+    objective: 'Acquire qualified enterprise inquiries for high-ticket digital growth services.',
+    learnings: [
+      'High CPM (₹1.8K) compensated by top-tier lead quality targeting CXO level executives.',
+      'In-depth case study lead magnets yielded 15.3% landing page form submission rate.',
+      'Retargeting website visitors with client testimonial videos boosted final conversion velocity.',
+      '140 enterprise decision-maker leads generated with average contract potential exceeding ₹500K.'
+    ]
+  },
+  {
+    id: 'cult-canvas',
+    slug: 'cult-canvas',
+    name: 'Cult Canvas',
+    industry: 'Art / Creative Services',
+    status: 'Completed',
+    spend: '₹10,338',
+    spendRaw: 10338,
+    impressions: '293K',
+    reach: '247K',
+    clicks: '1,547',
+    ctr: '0.53%',
+    cpm: '₹35',
+    leads: '86',
+    leadsRaw: 86,
+    conversions: '—',
+    cpl: '₹120',
+    efficiency: 85,
+    category: 'Creative',
+    desc: 'Visual storytelling and art acquisition campaign reaching modern design collectors.',
+    objective: 'Drive inquiries and commission requests for custom art pieces and studio gallery.',
+    learnings: [
+      'High visual volume (293K impressions) built substantial local brand awareness for studio.',
+      'Instagram Reels format delivered 68% of total commission inquiry leads.',
+      'Architectural interior designers represented highest-value commission segment.',
+      'Achieved a lean ₹120 Cost Per Lead in high-end luxury art vertical.'
+    ]
+  },
+  {
+    id: 'genzu',
+    slug: 'genzu',
+    name: 'Genzu',
+    industry: 'Interior Design',
+    status: 'Completed',
+    spend: '₹932',
+    spendRaw: 932,
+    impressions: '163K',
+    reach: '154K',
+    clicks: '1,520',
+    ctr: '0.93%',
+    cpm: '—',
+    leads: '—',
+    leadsRaw: 0,
+    conversions: '—',
+    cpl: '—',
+    efficiency: 70,
+    category: 'Creative',
+    desc: 'Brand awareness and impression scaling campaign for bespoke interior design concepts.',
+    objective: 'Maximize brand exposure and architectural portfolio engagement among luxury homeowners.',
+    learnings: [
+      'Generated 163,000 targeted impressions at micro ad spend for luxury interior portfolio.',
+      'Achieved strong 1,520 site visits driven by high-definition interior design gallery ads.',
+      'Identified premium residential real estate interest segments for future lead campaigns.',
+      'Established foundational pixel data for subsequent retargeting funnels.'
+    ]
+  },
+  {
+    id: 'get-debt-free',
+    slug: 'get-debt-free',
+    name: 'Get Debt Free',
+    industry: 'Financial Services',
+    status: 'Completed',
+    spend: '₹101,722',
+    spendRaw: 101722,
+    impressions: '—',
+    reach: '—',
+    clicks: '—',
+    ctr: '—',
+    cpm: '—',
+    leads: '140',
+    leadsRaw: 140,
+    conversions: '—',
+    cpl: '₹727',
+    efficiency: 80,
+    category: 'Finance',
+    desc: 'Trust-focused lead funnel targeting consumers seeking structured debt advisory.',
+    objective: 'Generate high-intent consultations for personal financial restructuring and debt relief.',
+    learnings: [
+      'Trust-first copywriting highlighting privacy and regulatory compliance increased conversions.',
+      '140 qualified financial consultation leads generated for specialized financial advisory.',
+      'Multi-step screening questionnaire ensured lead intent and eligibility prior to advisory calls.',
+      'Cost per lead stabilized at ₹727 while maintaining zero compliance violations.'
+    ]
+  }
+];
+
+// BRAND LOGO COMPONENT
+const DSBrandLogo = ({ className = "h-10" }) => {
+  return (
+    <div className={`flex items-center space-x-3 group cursor-pointer ${className}`}>
+      <div className="relative overflow-hidden rounded-full border border-gold/40 p-1 bg-obsidian-card shadow-glow-gold transition-transform duration-500 group-hover:scale-105">
+        <svg className="w-8 h-8 text-gold animate-neon-glow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="9" stroke="#F3C623" />
+          <path d="M8 8 h4 a2 2 0 0 1 0 4 h-4 v-4 Z" fill="#F3C623" fillOpacity="0.3" />
+          <path d="M8 12 h4 a2 2 0 0 1 0 4 h-4 v-4 Z" fill="#00F5D4" fillOpacity="0.4" />
+        </svg>
+      </div>
+      <div className="flex flex-col">
+        <span className="font-serif text-xl font-bold tracking-tight text-textMain group-hover:text-gold transition-colors leading-tight">
+          DEEPENDRA SHAKYA
+        </span>
+        <span className="font-mono text-[9px] text-emerald tracking-widest uppercase">
+          PERFORMANCE MARKETING
+        </span>
+      </div>
+    </div>
+  );
+};
+
+// GENERATED AVATAR PROFILE
+const GeneratedAvatar = ({ className = "" }) => {
+  return (
+    <div className={`relative overflow-hidden rounded-xs border border-gold/40 bg-obsidian-card group shadow-card-dark ${className}`}>
+      <div className="relative w-full h-full flex flex-col justify-between p-6 bg-gradient-to-b from-obsidian-card via-obsidian to-obsidian">
+        <div className="flex justify-between items-center z-10">
+          <DSBrandLogo className="h-8" />
+          <span className="bg-gold text-obsidian text-[10px] font-mono px-3 py-1 rounded-full font-bold uppercase shadow-glow-gold">
+            Verified Strategist
+          </span>
+        </div>
+
+        <div className="my-6 relative z-10 flex flex-col items-center text-center space-y-4">
+          <div className="relative p-3 rounded-full border-2 border-gold/50 shadow-glow-gold bg-obsidian">
+            <svg className="w-24 h-24 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" stroke="#00F5D4" strokeWidth="2" />
+            </svg>
+          </div>
+          <div>
+            <h3 className="font-serif text-2xl font-bold text-textMain">Deependra Shakya</h3>
+            <p className="font-mono text-xs text-emerald tracking-widest uppercase mt-1">Growth & Ad Funnel Architect</p>
+          </div>
+        </div>
+
+        <div className="pt-4 border-t border-gold/20 flex justify-between text-[11px] font-mono text-textMuted z-10">
+          <span>Aggregated ROAS Focus</span>
+          <span className="text-gold font-bold">100% Data Backed</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// CLIENT LOGO RENDERER
+const ClientLogo = ({ slug, className = "h-8" }) => {
+  switch (slug) {
+    case 'solar-ji':
+      return (
+        <div className={`flex items-center space-x-2 font-serif text-textMain font-bold tracking-tight ${className}`}>
+          <svg className="w-7 h-7 text-gold animate-neon-glow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="5" fill="#F3C623" fillOpacity="0.3" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" strokeLinecap="round"/>
+          </svg>
+          <span className="text-xl">SOLAR<span className="text-emerald font-sans font-light">JI</span></span>
+        </div>
+      );
+    case 'sahu-motors':
+      return (
+        <div className={`flex items-center space-x-2 font-sans font-black tracking-wider text-textMain uppercase ${className}`}>
+          <svg className="w-8 h-8 text-emerald" viewBox="0 0 32 32" fill="none">
+            <path d="M4 22 L16 6 L28 22 L20 22 L16 14 L12 22 Z" fill="#00F5D4" />
+            <line x1="2" y1="26" x2="30" y2="26" stroke="#F3C623" strokeWidth="3" />
+          </svg>
+          <div className="leading-none">
+            <div className="text-lg font-extrabold tracking-widest text-textMain">SAHU</div>
+            <div className="text-[9px] font-mono text-gold tracking-widest">MOTORS</div>
+          </div>
+        </div>
+      );
+    case 'gg-organic':
+      return (
+        <div className={`flex items-center space-x-2 font-serif ${className}`}>
+          <svg className="w-7 h-7 text-emerald" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <circle cx="12" cy="12" r="10" stroke="#00F5D4" />
+            <path d="M12 6C12 6 16 9 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 9 12 6 12 6Z" fill="#00F5D4" fillOpacity="0.3" stroke="#00F5D4"/>
+          </svg>
+          <span className="text-lg font-bold text-textMain tracking-tight">GG <span className="font-sans text-xs uppercase tracking-widest text-emerald font-normal">Organic</span></span>
+        </div>
+      );
+    case 'kalpana-solar-traders':
+      return (
+        <div className={`flex items-center space-x-2.5 font-sans ${className}`}>
+          <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+            <rect x="4" y="4" width="24" height="24" rx="2" stroke="#00F5D4" strokeWidth="2" fill="#00F5D4" fillOpacity="0.1" />
+            <line x1="4" y1="12" x2="28" y2="12" stroke="#00F5D4" strokeWidth="1" />
+            <line x1="4" y1="20" x2="28" y2="20" stroke="#00F5D4" strokeWidth="1" />
+            <circle cx="20" cy="12" r="3" fill="#F3C623" />
+          </svg>
+          <div>
+            <div className="text-sm font-bold tracking-tight text-textMain uppercase leading-none">KALPANA</div>
+            <div className="text-[9px] font-mono text-emerald tracking-wider uppercase">Solar Traders</div>
+          </div>
+        </div>
+      );
+    case 'gdfl':
+      return (
+        <div className={`flex items-center space-x-2 font-mono ${className}`}>
+          <div className="bg-gold text-obsidian font-bold px-2.5 py-1 text-base tracking-wider rounded-xs shadow-glow-gold">
+            GDFL
+          </div>
+          <span className="text-[10px] text-textMuted uppercase font-sans tracking-widest leading-tight">Digital<br/>Group</span>
+        </div>
+      );
+    case 'cult-canvas':
+      return (
+        <div className={`flex items-center space-x-2 font-serif italic ${className}`}>
+          <svg className="w-7 h-7 text-textMain" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="1" stroke="#F8F9FA" />
+            <path d="M3 15L8 10L14 16L18 12L21 15" stroke="#F3C623" strokeWidth="1.5" />
+          </svg>
+          <span className="text-lg font-normal text-textMain">Cult <span className="not-italic font-sans text-xs uppercase tracking-widest text-gold font-bold">Canvas</span></span>
+        </div>
+      );
+    case 'genzu':
+      return (
+        <div className={`flex items-center space-x-2 font-sans tracking-widest ${className}`}>
+          <svg className="w-7 h-7" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00F5D4" strokeWidth="2" fill="none" />
+            <polygon points="14,6 22,10 22,18 14,22 6,18 6,10" fill="#00F5D4" fillOpacity="0.25" />
+          </svg>
+          <span className="text-xl font-light text-textMain uppercase tracking-[0.25em]">GENZU</span>
+        </div>
+      );
+    case 'get-debt-free':
+      return (
+        <div className={`flex items-center space-x-2 font-sans ${className}`}>
+          <svg className="w-7 h-7 text-emerald" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#00F5D4" fillOpacity="0.15" />
+            <path d="M9 12l2 2 4-4" stroke="#F3C623" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <div className="leading-none">
+            <div className="text-sm font-bold text-textMain tracking-tight">GET DEBT FREE</div>
+            <div className="text-[9px] font-mono text-emerald">ADVISORY GROUP</div>
+          </div>
+        </div>
+      );
+    default:
+      return <div className="font-serif font-bold text-textMain">{slug}</div>;
+  }
+};
+
+// CLIENT HERO IMAGE RENDERER
+const ClientHeroImage = ({ slug, heroImage, className = "h-48 w-full" }) => {
+  return (
+    <div className={`relative overflow-hidden bg-obsidian-card flex items-center justify-center ${className}`}>
+      <div className="text-gold font-mono text-xs uppercase">{slug} Visual</div>
+    </div>
+  );
+};
+
+// CASE STUDY ILLUSTRATIVE VISUALS
+const CaseStudyVisual = ({ type, title }) => {
+  return (
+    <div className="bg-obsidian-card border border-gold/20 p-6 rounded-xs relative overflow-hidden group shadow-card-dark">
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-[10px] font-mono text-emerald uppercase tracking-widest font-bold">Illustrative Strategy Visual</span>
+        <span className="text-xs font-mono text-gold font-bold">{type}</span>
+      </div>
+      <h4 className="font-serif font-bold text-lg text-textMain mb-2">{title}</h4>
+      <div className="h-36 w-full bg-obsidian rounded border border-gold/15 flex items-center justify-center p-4 relative">
+        <svg className="w-full h-full opacity-90" viewBox="0 0 300 120" fill="none">
+          {type === 'STRATEGY' && (
+            <g stroke="#00F5D4" strokeWidth="2">
+              <circle cx="50" cy="60" r="25" fill="#00F5D4" fillOpacity="0.1" />
+              <circle cx="150" cy="60" r="35" fill="#F3C623" fillOpacity="0.15" stroke="#F3C623" />
+              <circle cx="250" cy="60" r="25" fill="#00F5D4" fillOpacity="0.1" />
+              <path d="M 75 60 L 115 60 M 185 60 L 225 60" strokeDasharray="4 4" />
+            </g>
+          )}
+          {type === 'TARGETING' && (
+            <g stroke="#00F5D4" strokeWidth="1.5">
+              <circle cx="150" cy="60" r="50" strokeDasharray="6 6" />
+              <circle cx="150" cy="60" r="30" stroke="#F3C623" />
+              <circle cx="150" cy="60" r="10" fill="#00F5D4" />
+            </g>
+          )}
+          {type === 'FUNNEL' && (
+            <g fill="#00F5D4" fillOpacity="0.2" stroke="#00F5D4" strokeWidth="1.5">
+              <polygon points="40,20 260,20 220,50 80,50" />
+              <polygon points="80,55 220,55 180,85 120,85" stroke="#F3C623" fill="#F3C623" fillOpacity="0.2" />
+            </g>
+          )}
+          {type === 'OPTIMIZATION' && (
+            <g stroke="#00F5D4" strokeWidth="2">
+              <path d="M 30 90 Q 90 80 130 50 T 270 20" fill="none" stroke="#00F5D4" strokeWidth="3" />
+            </g>
+          )}
+        </svg>
+      </div>
+      <p className="text-xs text-textMuted mt-3 font-sans">
+        Modular campaign blueprint mapping audience intent touchpoints with continuous ROAS tracking.
+      </p>
+    </div>
+  );
+};
+
+// 3D HERO WEBGL CANVAS
+const HeroScene3D = () => {
+  const mountRef = useRef(null);
+
+  useEffect(() => {
+    const container = mountRef.current;
+    if (!container) return;
+
+    const scene = new THREE.Scene();
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+    camera.position.set(0, 3, 14);
+
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+
+    const dirLight = new THREE.DirectionalLight(0xF3C623, 2.0);
+    dirLight.position.set(10, 20, 15);
+    scene.add(dirLight);
+
+    const cyanLight = new THREE.PointLight(0x00F5D4, 3.5, 25);
+    cyanLight.position.set(-5, 5, 5);
+    scene.add(cyanLight);
+
+    const metricsData = [
+      { label: "Ad Spend", value: "₹3.1L", height: 4.2, color: 0x00F5D4, posX: -4.5 },
+      { label: "Leads", value: "1,254", height: 5.5, color: 0xF3C623, posX: -1.5 },
+      { label: "Impressions", value: "2.9M", height: 6.8, color: 0x00F5D4, posX: 1.5 },
+      { label: "Reach", value: "1.78M", height: 4.8, color: 0xFFD700, posX: 4.5 }
+    ];
+
+    const bars = [];
+    const group = new THREE.Group();
+
+    metricsData.forEach((data) => {
+      const geometry = new THREE.BoxGeometry(1.4, data.height, 1.4);
+      const material = new THREE.MeshPhysicalMaterial({
+        color: data.color,
+        emissive: data.color,
+        emissiveIntensity: 0.25,
+        transmission: 0.35,
+        opacity: 0.95,
+        transparent: true,
+        roughness: 0.05,
+        metalness: 0.3,
+        ior: 1.5,
+        clearcoat: 1.0
+      });
+
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.position.set(data.posX, -2 + data.height / 2, 0);
+      mesh.scale.y = 0.01;
+
+      group.add(mesh);
+      bars.push({ mesh, targetScaleY: 1, currentScaleY: 0.01, speed: 0.03 + Math.random() * 0.02 });
+    });
+
+    const gridHelper = new THREE.GridHelper(20, 20, 0xF3C623, 0x00F5D4);
+    gridHelper.position.y = -2;
+    gridHelper.material.opacity = 0.25;
+    gridHelper.material.transparent = true;
+    group.add(gridHelper);
+
+    const particleGeo = new THREE.BufferGeometry();
+    const particleCount = 180;
+    const posArray = new Float32Array(particleCount * 3);
+    for (let i = 0; i < particleCount * 3; i++) {
+      posArray[i] = (Math.random() - 0.5) * 24;
+    }
+    particleGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const particles = new THREE.Points(particleGeo, new THREE.PointsMaterial({ size: 0.12, color: 0xF3C623, transparent: true, opacity: 0.75 }));
+    group.add(particles);
+
+    scene.add(group);
+
+    let mouseX = 0, mouseY = 0;
+    const handleMouseMove = (e) => {
+      mouseX = (e.clientX / window.innerWidth - 0.5) * 0.8;
+      mouseY = (e.clientY / window.innerHeight - 0.5) * 0.8;
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+
+    let animationFrameId;
+    const animate = () => {
+      animationFrameId = requestAnimationFrame(animate);
+      bars.forEach(bar => {
+        if (bar.currentScaleY < bar.targetScaleY) {
+          bar.currentScaleY += (bar.targetScaleY - bar.currentScaleY) * bar.speed;
+          bar.mesh.scale.y = bar.currentScaleY;
+        }
+      });
+      group.rotation.y = mouseX * 0.35;
+      group.rotation.x = mouseY * 0.25;
+      particles.rotation.y += 0.0015;
+      renderer.render(scene, camera);
+    };
+    animate();
+
+    const handleResize = () => {
+      if (!container) return;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('resize', handleResize);
+      cancelAnimationFrame(animationFrameId);
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
+      }
+    };
+  }, []);
+
+  return <div ref={mountRef} className="w-full h-full min-h-[420px]" />;
+};
+
+// 3D PERFORMANCE BAR CHART CANVAS
+const PerformanceChart3D = () => {
+  const mountRef = useRef(null);
+  const [hoveredData, setHoveredData] = useState(null);
+
+  useEffect(() => {
+    const container = mountRef.current;
+    if (!container) return;
+
+    const scene = new THREE.Scene();
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+    camera.position.set(0, 4, 16);
+
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    const light = new THREE.DirectionalLight(0xF3C623, 1.5);
+    light.position.set(5, 15, 10);
+    scene.add(light);
+
+    const barsGroup = new THREE.Group();
+    const barMeshes = [];
+
+    CLIENTS_DATA.forEach((client, idx) => {
+      const leadVal = client.leadsRaw || 10;
+      const heightVal = Math.max(0.5, (leadVal / 719) * 6);
+      const geometry = new THREE.BoxGeometry(0.9, heightVal, 0.9);
+      
+      const isTop = idx < 2;
+      const material = new THREE.MeshStandardMaterial({
+        color: isTop ? 0xF3C623 : 0x00F5D4,
+        roughness: 0.1,
+        metalness: 0.4,
+        emissive: isTop ? 0xF3C623 : 0x00F5D4,
+        emissiveIntensity: 0.35
+      });
+
+      const mesh = new THREE.Mesh(geometry, material);
+      const posX = -7 + idx * 2.0;
+      mesh.position.set(posX, -2 + heightVal / 2, 0);
+      mesh.userData = client;
+
+      barsGroup.add(mesh);
+      barMeshes.push(mesh);
+    });
+
+    const grid = new THREE.GridHelper(24, 24, 0x00F5D4, 0xF3C623);
+    grid.position.y = -2;
+    grid.material.opacity = 0.25;
+    grid.material.transparent = true;
+    barsGroup.add(grid);
+
+    scene.add(barsGroup);
+
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+
+    const handlePointerMove = (e) => {
+      const rect = container.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(barMeshes);
+
+      if (intersects.length > 0) {
+        setHoveredData(intersects[0].object.userData);
+      } else {
+        setHoveredData(null);
+      }
+    };
+
+    container.addEventListener('mousemove', handlePointerMove);
+
+    let animationFrameId;
+    const animate = () => {
+      animationFrameId = requestAnimationFrame(animate);
+      barsGroup.rotation.y += 0.0025;
+      renderer.render(scene, camera);
+    };
+    animate();
+
+    const handleResize = () => {
+      if (!container) return;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      container.removeEventListener('mousemove', handlePointerMove);
+      window.removeEventListener('resize', handleResize);
+      cancelAnimationFrame(animationFrameId);
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
+      }
+    };
+  }, []);
+
+  return (
+    <div className="relative w-full h-80 bg-obsidian-card rounded-xs border border-gold/20 p-4 overflow-hidden shadow-card-dark">
+      <div ref={mountRef} className="w-full h-full cursor-pointer" />
+      {hoveredData ? (
+        <div className="absolute top-4 right-4 glass-obsidian p-4 rounded-xs shadow-2xl text-xs font-mono max-w-xs border border-gold/40">
+          <div className="text-gold font-bold text-sm mb-1">{hoveredData.name}</div>
+          <div className="text-textMuted text-[10px] mb-2">{hoveredData.industry}</div>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-textMain">
+            <span>Spend: <strong className="text-textMain">{hoveredData.spend}</strong></span>
+            <span>Leads: <strong className="text-gold">{hoveredData.leads}</strong></span>
+            <span>CPL: <strong className="text-emerald">{hoveredData.cpl}</strong></span>
+            <span>CTR: <strong className="text-textMain">{hoveredData.ctr}</strong></span>
+          </div>
+        </div>
+      ) : (
+        <div className="absolute bottom-4 right-4 text-[10px] font-mono text-textMuted bg-obsidian/80 px-3 py-1 rounded-full border border-gold/20">
+          Hover 3D bars to inspect details
+        </div>
+      )}
+    </div>
+  );
+};
+
+// 3D SCATTER PLOT
+const ScatterPlot3D = () => {
+  const mountRef = useRef(null);
+  const [hoveredClient, setHoveredClient] = useState(null);
+
+  useEffect(() => {
+    const container = mountRef.current;
+    if (!container) return;
+
+    const scene = new THREE.Scene();
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+    camera.position.set(0, 2, 14);
+
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    const dirLight = new THREE.DirectionalLight(0x00F5D4, 1.5);
+    dirLight.position.set(10, 10, 10);
+    scene.add(dirLight);
+
+    const group = new THREE.Group();
+    const spheres = [];
+
+    CLIENTS_DATA.forEach((client) => {
+      const posX = ((client.spendRaw - 500) / 100000) * 8 - 4;
+      const posY = (client.leadsRaw / 719) * 5 - 2;
+      const posZ = (client.efficiency / 100) * 4 - 2;
+
+      const radius = Math.max(0.35, (client.leadsRaw / 719) * 0.95);
+      const geometry = new THREE.SphereGeometry(radius, 32, 32);
+
+      const isHighEff = client.efficiency >= 85;
+      const material = new THREE.MeshPhysicalMaterial({
+        color: isHighEff ? 0x00F5D4 : 0xF3C623,
+        emissive: isHighEff ? 0x00F5D4 : 0xF3C623,
+        emissiveIntensity: 0.3,
+        roughness: 0.1,
+        metalness: 0.3,
+        clearcoat: 1.0
+      });
+
+      const sphere = new THREE.Mesh(geometry, material);
+      sphere.position.set(posX, posY, posZ);
+      sphere.userData = client;
+
+      group.add(sphere);
+      spheres.push(sphere);
+    });
+
+    const grid = new THREE.GridHelper(16, 16, 0x00F5D4, 0xF3C623);
+    grid.position.y = -3;
+    grid.material.opacity = 0.25;
+    grid.material.transparent = true;
+    group.add(grid);
+
+    scene.add(group);
+
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+
+    const handlePointerMove = (e) => {
+      const rect = container.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(spheres);
+
+      if (intersects.length > 0) {
+        setHoveredClient(intersects[0].object.userData);
+      } else {
+        setHoveredClient(null);
+      }
+    };
+
+    container.addEventListener('mousemove', handlePointerMove);
+
+    let animationFrameId;
+    let angle = 0;
+    const animate = () => {
+      animationFrameId = requestAnimationFrame(animate);
+      angle += 0.003;
+      group.rotation.y = Math.sin(angle) * 0.25;
+      renderer.render(scene, camera);
+    };
+    animate();
+
+    const handleResize = () => {
+      if (!container) return;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      container.removeEventListener('mousemove', handlePointerMove);
+      window.removeEventListener('resize', handleResize);
+      cancelAnimationFrame(animationFrameId);
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
+      }
+    };
+  }, []);
+
+  return (
+    <div className="relative w-full h-96 bg-obsidian-card rounded-xs border border-gold/20 p-4 shadow-card-dark">
+      <div className="absolute top-4 left-4 z-10 font-mono text-[11px] text-textMuted">
+        <div>Axes: <span className="text-emerald font-bold">X: Ad Spend</span> | <span className="text-gold font-bold">Y: Lead Volume</span> | <span>Z: Campaign Efficiency</span></div>
+      </div>
+      <div ref={mountRef} className="w-full h-full cursor-crosshair" />
+      {hoveredClient && (
+        <div className="absolute bottom-4 left-4 z-10 glass-obsidian p-4 rounded-xs shadow-2xl font-mono text-xs border border-gold/40">
+          <div className="text-gold font-bold text-sm">{hoveredClient.name}</div>
+          <div className="text-textMuted text-[10px]">{hoveredClient.industry}</div>
+          <div className="mt-2 space-y-0.5 text-textMain">
+            <div>Ad Spend: <span className="text-textMain">{hoveredClient.spend}</span></div>
+            <div>Leads: <span className="text-gold">{hoveredClient.leads}</span></div>
+            <div>CPL: <span className="text-emerald">{hoveredClient.cpl}</span></div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// 3D BACKGROUND FOR CASE STUDY
+const CaseStudyBg3D = () => {
+  const mountRef = useRef(null);
+
+  useEffect(() => {
+    const container = mountRef.current;
+    if (!container) return;
+
+    const scene = new THREE.Scene();
+    const w = container.clientWidth;
+    const h = container.clientHeight;
+
+    const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
+    camera.position.z = 8;
+
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(w, h);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+    const geo = new THREE.TorusKnotGeometry(2, 0.6, 100, 16);
+    const mat = new THREE.MeshPhysicalMaterial({ color: 0x00F5D4, wireframe: true, transparent: true, opacity: 0.3 });
+    const mesh = new THREE.Mesh(geo, mat);
+    scene.add(mesh);
+
+    let id;
+    const animate = () => {
+      id = requestAnimationFrame(animate);
+      mesh.rotation.x += 0.003;
+      mesh.rotation.y += 0.005;
+      renderer.render(scene, camera);
+    };
+    animate();
+
+    return () => {
+      cancelAnimationFrame(id);
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
+      }
+    };
+  }, []);
+
+  return <div ref={mountRef} className="absolute inset-0 pointer-events-none opacity-40" />;
+};
+
+// 3D FLIP CLIENT CARD COMPONENT
+const Client3DCard = ({ client, onSelect }) => {
+  const [flipped, setFlipped] = useState(false);
+
+  return (
+    <div 
+      className="perspective-1000 w-full h-[470px] cursor-pointer group"
+      onClick={() => setFlipped(!flipped)}
+    >
+      <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${flipped ? 'rotate-y-180' : ''}`}>
+        
+        {/* FRONT */}
+        <div className="absolute inset-0 backface-hidden bg-obsidian-card rounded-xs border border-gold/20 shadow-card-dark group-hover:border-gold/50 transition-all p-5 flex flex-col justify-between">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <ClientLogo slug={client.slug} className="h-7" />
+              <span className={`text-[10px] font-mono px-2.5 py-0.5 rounded-full uppercase font-bold tracking-wider ${
+                client.status === 'Active' ? 'bg-emerald/10 text-emerald border border-emerald/30' : 'bg-obsidian-light text-textMuted border border-obsidian-border'
+              }`}>
+                {client.status}
+              </span>
+            </div>
+
+            <ClientHeroImage slug={client.slug} heroImage={client.heroImage} className="h-40 w-full rounded-xs my-2 border border-obsidian-border" />
+
+            <div className="mt-3">
+              <span className="text-[11px] font-mono text-gold uppercase tracking-widest font-bold">{client.industry}</span>
+              <h3 className="font-serif font-bold text-xl text-textMain leading-tight mt-0.5">{client.name}</h3>
+              <p className="text-xs text-textMuted font-sans mt-2 line-clamp-2 leading-relaxed">{client.desc}</p>
+            </div>
+          </div>
+
+          <div className="pt-3 border-t border-obsidian-border flex items-center justify-between text-xs font-mono text-emerald">
+            <span className="flex items-center space-x-1 font-bold">
+              <span>Click / Hover to Flip</span>
+            </span>
+            <span className="text-gold font-bold">3D →</span>
+          </div>
+        </div>
+
+        {/* BACK */}
+        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-obsidian text-textMain rounded-xs border border-gold/40 p-6 flex flex-col justify-between shadow-2xl">
+          <div>
+            <div className="flex items-center justify-between border-b border-obsidian-border pb-3 mb-4">
+              <div>
+                <h4 className="font-serif font-bold text-lg text-gold">{client.name}</h4>
+                <p className="text-[10px] font-mono text-textMuted uppercase">{client.industry}</p>
+              </div>
+              <span className="text-[10px] font-mono bg-gold/20 text-gold px-2.5 py-0.5 rounded-full border border-gold/40 font-bold">
+                Verified
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 font-mono text-xs">
+              <div className="bg-obsidian-card p-2.5 rounded border border-obsidian-border">
+                <span className="text-[9px] text-textMuted block">AD SPEND</span>
+                <span className="font-bold text-textMain text-sm">{client.spend}</span>
+              </div>
+              <div className="bg-obsidian-card p-2.5 rounded border border-obsidian-border">
+                <span className="text-[9px] text-gold block">LEADS</span>
+                <span className="font-bold text-gold text-sm">{client.leads}</span>
+              </div>
+              <div className="bg-obsidian-card p-2.5 rounded border border-obsidian-border">
+                <span className="text-[9px] text-textMuted block">CONVERSIONS</span>
+                <span className="font-bold text-textMain text-sm">{client.conversions}</span>
+              </div>
+              <div className="bg-obsidian-card p-2.5 rounded border border-obsidian-border">
+                <span className="text-[9px] text-emerald block">CPL</span>
+                <span className="font-bold text-emerald text-sm">{client.cpl}</span>
+              </div>
+            </div>
+
+            <div className="mt-4 pt-3 border-t border-obsidian-border text-[11px] font-mono text-textMuted space-y-1">
+              <div>CTR: <strong className="text-textMain">{client.ctr}</strong> | CPM: <strong className="text-textMain">{client.cpm}</strong></div>
+              <div>Impressions: <strong className="text-textMain">{client.impressions}</strong></div>
+              <div>Reach: <strong className="text-textMain">{client.reach}</strong></div>
+            </div>
+          </div>
+
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              onSelect(client.slug);
+            }}
+            className="w-full bg-gold hover:bg-gold-light text-obsidian py-3 rounded-xs font-mono text-xs uppercase tracking-wider font-bold transition-all flex items-center justify-center space-x-2 shadow-glow-gold"
+          >
+            <span>Read In-Depth Case Study</span>
+            <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+// CONTACT MODAL
+const ContactModal = ({ isOpen, onClose }) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [budget, setBudget] = useState(100000);
+  const [industry, setIndustry] = useState('Solar');
+
+  const estimatedLeads = useMemo(() => {
+    let multiplier = 0.004;
+    if (industry === 'Automotive') multiplier = 0.012;
+    if (industry === 'Solar') multiplier = 0.005;
+    if (industry === 'B2B') multiplier = 0.0015;
+    return Math.round(budget * multiplier);
+  }, [budget, industry]);
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-obsidian/85 backdrop-blur-md">
+      <div className="bg-obsidian-card border border-gold/30 rounded-xs max-w-2xl w-full p-6 md:p-8 relative shadow-card-dark">
+        <button onClick={onClose} className="absolute top-4 right-4 text-textMuted hover:text-textMain font-mono text-xl p-1">✕</button>
+
+        {submitted ? (
+          <div className="text-center py-10 space-y-4">
+            <div className="w-14 h-14 bg-emerald text-obsidian rounded-full flex items-center justify-center mx-auto text-2xl font-bold shadow-glow-emerald">✓</div>
+            <h3 className="font-serif font-bold text-3xl text-textMain">Growth Audit Requested</h3>
+            <p className="text-sm font-sans text-textMuted">Deependra Shakya will analyze your ad funnel parameters and reply within 24 business hours.</p>
+            <button onClick={onClose} className="mt-4 bg-gold text-obsidian px-6 py-2.5 rounded-xs font-mono text-xs uppercase tracking-wider font-bold shadow-glow-gold">Return to Portfolio</button>
+          </div>
+        ) : (
+          <div className="space-y-6">
+            <div>
+              <span className="text-xs font-mono text-gold uppercase tracking-widest font-bold">Growth Partnership</span>
+              <h3 className="font-serif font-bold text-2xl md:text-3xl text-textMain mt-1">Let’s Build Your Next Growth Story</h3>
+            </div>
+
+            <div className="bg-obsidian p-4 rounded-xs border border-gold/20 space-y-3 font-mono text-xs">
+              <div className="flex justify-between items-center">
+                <span className="text-emerald font-bold uppercase">Live Lead Calculator</span>
+                <span className="text-textMuted">Est. Output</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="text-[10px] text-textMuted block">MONTHLY BUDGET: ₹{budget.toLocaleString()}</label>
+                  <input 
+                    type="range" 
+                    min="20000" 
+                    max="500000" 
+                    step="10000" 
+                    value={budget} 
+                    onChange={(e) => setBudget(Number(e.target.value))}
+                    className="w-full accent-gold mt-1"
+                  />
+                </div>
+                <div>
+                  <label className="text-[10px] text-textMuted block">INDUSTRY</label>
+                  <select 
+                    value={industry} 
+                    onChange={(e) => setIndustry(e.target.value)}
+                    className="w-full bg-obsidian-card border border-gold/20 p-1.5 text-xs rounded-xs mt-1 text-textMain"
+                  >
+                    <option value="Solar">Solar Energy</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="B2B">B2B / SaaS</option>
+                  </select>
+                </div>
+              </div>
+              <div className="pt-2 border-t border-obsidian-border flex justify-between items-center text-textMain">
+                <span>ESTIMATED HIGH-INTENT LEADS:</span>
+                <span className="text-base font-bold text-gold">~{estimatedLeads} Leads / mo</span>
+              </div>
+            </div>
+
+            <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-4 font-sans">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono text-textMain mb-1">YOUR NAME</label>
+                  <input required type="text" placeholder="e.g. Rahul Sharma" className="w-full bg-obsidian border border-gold/20 rounded-xs p-2.5 text-xs text-textMain focus:outline-none focus:border-gold" />
+                </div>
+                <div>
+                  <label className="block text-xs font-mono text-textMain mb-1">WORK EMAIL / PHONE</label>
+                  <input required type="text" placeholder="rahul@company.com" className="w-full bg-obsidian border border-gold/20 rounded-xs p-2.5 text-xs text-textMain focus:outline-none focus:border-gold" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-xs font-mono text-textMain mb-1">CAMPAIGN OBJECTIVE</label>
+                <textarea rows="2" placeholder="Target CPL, lead volume, or platform challenges..." className="w-full bg-obsidian border border-gold/20 rounded-xs p-2.5 text-xs text-textMain focus:outline-none focus:border-gold" />
+              </div>
+
+              <button type="submit" className="w-full bg-gold hover:bg-gold-light text-obsidian py-3.5 rounded-xs font-mono text-xs uppercase tracking-wider font-bold transition-colors shadow-glow-gold">
+                Submit Performance Inquiry →
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+// CASE STUDY PAGE ROUTE
+const CaseStudyPage = ({ slug, onBack, onNavigate }) => {
+  const client = CLIENTS_DATA.find(c => c.slug === slug) || CLIENTS_DATA[0];
+
+  useEffect(() => { window.scrollTo(0, 0); }, [slug]);
+
+  return (
+    <div className="min-h-screen bg-obsidian text-textMain relative">
+      <CaseStudyBg3D />
+
+      <nav className="sticky top-0 z-40 bg-obsidian/90 backdrop-blur border-b border-gold/20 px-6 py-4 flex items-center justify-between">
+        <button onClick={onBack} className="font-mono text-xs uppercase text-emerald flex items-center space-x-2 font-bold hover:underline">
+          <span>← Back to Portfolio</span>
+        </button>
+        <DSBrandLogo className="h-7" />
+        <button onClick={onBack} className="font-mono text-xs text-gold uppercase font-bold">All Work</button>
+      </nav>
+
+      <main className="max-w-6xl mx-auto px-6 py-12 relative z-10 space-y-16">
+        <header className="space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-obsidian-border pb-6">
+            <ClientLogo slug={client.slug} className="h-10" />
+            <div className="flex items-center space-x-3 font-mono text-xs">
+              <span className="bg-emerald/15 text-emerald px-3 py-1 rounded-full uppercase font-bold border border-emerald/30">{client.industry}</span>
+              <span className="bg-gold text-obsidian px-3 py-1 rounded-full uppercase font-bold">{client.status}</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-7 space-y-4">
+              <h1 className="font-serif text-3xl md:text-5xl font-bold text-textMain leading-tight">
+                {client.name}: Performance Acquisition Case Study
+              </h1>
+              <p className="text-base text-textMuted font-sans leading-relaxed">
+                {client.objective}
+              </p>
+            </div>
+            <div className="md:col-span-5">
+              <ClientHeroImage slug={client.slug} heroImage={client.heroImage} className="h-64 w-full rounded-xs shadow-card-dark border border-gold/20" />
+            </div>
+          </div>
+        </header>
+
+        <section className="space-y-4">
+          <h2 className="font-mono text-xs uppercase text-emerald tracking-widest font-bold">01 / Verified Campaign Metrics</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 font-mono">
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-textMuted uppercase">AD SPEND</div>
+              <div className="text-2xl font-bold text-textMain mt-1">{client.spend}</div>
+            </div>
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-emerald uppercase">LEADS</div>
+              <div className="text-2xl font-bold text-emerald mt-1">{client.leads}</div>
+            </div>
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-gold uppercase">COST PER LEAD</div>
+              <div className="text-2xl font-bold text-gold mt-1">{client.cpl}</div>
+            </div>
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-textMuted uppercase">IMPRESSIONS</div>
+              <div className="text-xl font-bold text-textMain mt-1">{client.impressions}</div>
+            </div>
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-textMuted uppercase">REACH</div>
+              <div className="text-xl font-bold text-textMain mt-1">{client.reach}</div>
+            </div>
+            <div className="bg-obsidian-card border border-obsidian-border p-5 rounded-xs">
+              <div className="text-[10px] text-textMuted uppercase">CTR / CPM</div>
+              <div className="text-xl font-bold text-textMain mt-1">{client.ctr} / {client.cpm}</div>
+            </div>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="font-mono text-xs uppercase text-emerald tracking-widest font-bold">02 / Strategic Learnings</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {client.learnings.map((learning, idx) => (
+              <div key={idx} className="bg-obsidian-card border border-gold/20 p-6 rounded-xs space-y-2 shadow-card-dark">
+                <span className="font-serif text-4xl font-bold text-gold block">0{idx + 1}</span>
+                <p className="text-sm text-textMain font-sans leading-relaxed">{learning}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="font-mono text-xs uppercase text-emerald tracking-widest font-bold">03 / Visual Strategy Blueprint</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <CaseStudyVisual type="STRATEGY" title="Omnichannel Touchpoint Architecture" />
+            <CaseStudyVisual type="TARGETING" title="Demographic Micro-Segmentation" />
+            <CaseStudyVisual type="FUNNEL" title="Multi-Stage Conversion Funnel" />
+            <CaseStudyVisual type="OPTIMIZATION" title="Continuous ROAS Testing Loop" />
+          </div>
+        </section>
+
+        <div className="pt-12 border-t border-obsidian-border flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+          <button onClick={onBack} className="text-emerald font-bold hover:underline">← Return to All Campaigns</button>
+          <div className="flex space-x-2">
+            {CLIENTS_DATA.map(c => (
+              <button 
+                key={c.slug}
+                onClick={() => onNavigate(c.slug)}
+                className={`px-3 py-1.5 rounded text-[11px] ${c.slug === slug ? 'bg-gold text-obsidian font-bold' : 'bg-obsidian-card text-textMain hover:bg-gold/20'}`}
+              >
+                {c.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+// MAIN APP COMPONENT
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  const [activeRoute, setActiveRoute] = useState('home');
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState(null);
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [categoryFilter, setCategoryFilter] = useState('All');
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const filteredClients = useMemo(() => {
+    if (categoryFilter === 'All') return CLIENTS_DATA;
+    return CLIENTS_DATA.filter(c => c.category === categoryFilter);
+  }, [categoryFilter]);
+
+  const navigateToCaseStudy = (slug) => {
+    setSelectedCaseStudy(slug);
+    setActiveRoute('case-study');
+  };
+
+  const navigateToHome = () => {
+    setActiveRoute('home');
+    setSelectedCaseStudy(null);
+  };
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 bg-obsidian z-50 flex flex-col items-center justify-center p-6 text-center space-y-6">
+        <div className="font-serif font-black text-6xl text-gold animate-neon-glow">DS</div>
+        <div className="space-y-1">
+          <div className="font-serif text-2xl font-bold text-textMain">Deependra Shakya</div>
+          <div className="font-mono text-xs text-emerald uppercase tracking-widest">Digital Marketing / Performance / Growth</div>
+        </div>
+        <div className="w-52 h-1 bg-obsidian-card rounded-full overflow-hidden relative border border-gold/30">
+          <div className="absolute top-0 left-0 bottom-0 bg-gold w-full animate-pulse" />
+        </div>
+      </div>
+    );
+  }
+
+  if (activeRoute === 'case-study' && selectedCaseStudy) {
+    return <CaseStudyPage slug={selectedCaseStudy} onBack={navigateToHome} onNavigate={navigateToCaseStudy} />;
+  }
+
+  return (
+    <div className="min-h-screen bg-obsidian text-textMain font-sans selection:bg-gold selection:text-obsidian">
+      
+      {/* HEADER NAVIGATION */}
+      <header className="sticky top-0 z-40 bg-obsidian/90 backdrop-blur-md border-b border-gold/20 px-6 lg:px-12 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div onClick={navigateToHome}>
+            <DSBrandLogo className="h-10" />
+          </div>
+
+          <nav className="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-wider text-textMuted">
+            <a href="#work" className="hover:text-gold transition-colors">Work (3D)</a>
+            <a href="#results" className="hover:text-gold transition-colors">Results</a>
+            <a href="#about" className="hover:text-gold transition-colors">About Strategist</a>
+          </nav>
+
+          <button 
+            onClick={() => setIsContactOpen(true)}
+            className="bg-gold hover:bg-gold-light text-obsidian font-mono text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xs transition-all transform hover:-translate-y-0.5 shadow-glow-gold"
+          >
+            Let’s Build Your Next Growth Story →
+          </button>
+        </div>
+      </header>
+
+      {/* HERO SECTION */}
+      <section className="relative min-h-[85vh] flex items-center bg-dark-grid border-b border-gold/20 py-12 lg:py-0">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div className="lg:col-span-6 space-y-6 z-10">
+            <div className="inline-flex items-center space-x-2 bg-gold/10 border border-gold/30 px-3.5 py-1 rounded-full font-mono text-xs text-gold uppercase tracking-widest font-bold shadow-glow-gold">
+              <span>Performance Marketing Case-Study Magazine</span>
+            </div>
+
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal text-textMain leading-[1.05]">
+              Real Campaigns.<br />
+              <span className="italic font-serif text-gold font-semibold">Real Results.</span>
+            </h1>
+
+            <p className="text-base sm:text-lg text-textMuted font-sans max-w-xl leading-relaxed">
+              Deependra Shakya (DS) engineers high-converting paid acquisition funnels, Meta/Google ad structures, and data-driven client growth stories backed by verified performance metrics.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-4 pt-2 font-mono text-xs">
+              <button 
+                onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} 
+                className="bg-gold text-obsidian px-6 py-3.5 rounded-xs uppercase tracking-wider font-bold hover:bg-gold-light transition-colors shadow-glow-gold"
+              >
+                Inspect 3D Client Campaigns
+              </button>
+              <button 
+                onClick={() => setIsContactOpen(true)} 
+                className="border border-gold/30 text-textMain px-6 py-3.5 rounded-xs uppercase tracking-wider font-bold hover:border-gold hover:text-gold transition-colors"
+              >
+                Book Strategy Audit
+              </button>
+            </div>
+
+            <div className="pt-6 border-t border-obsidian-border grid grid-cols-3 gap-4 font-mono">
+              <div><span className="text-[10px] text-textMuted block uppercase">Aggregated Spend</span><span className="font-bold text-xl text-textMain">₹3.1L+</span></div>
+              <div><span className="text-[10px] text-emerald block uppercase">Total Leads</span><span className="font-bold text-xl text-emerald">1,254+</span></div>
+              <div><span className="text-[10px] text-gold block uppercase">Total Reach</span><span className="font-bold text-xl text-gold">1.78M</span></div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-6 h-[480px] w-full relative">
+            <HeroScene3D />
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-[10px] font-mono text-textMuted bg-obsidian-card/90 px-3 py-1 rounded-full border border-gold/20 shadow-md">
+              Interactive WebGL Glass Prisms • Hover / Move Cursor
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* PORTFOLIO CLIENT CARDS */}
+      <section id="work" className="py-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-gold/20 pb-6 gap-4">
+          <div>
+            <span className="font-mono text-xs uppercase text-emerald tracking-widest font-bold">01 / Portfolio Case Studies</span>
+            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-textMain mt-1">
+              Interactive 3D Client Cards
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap gap-2 font-mono text-xs">
+            {['All', 'Solar', 'Automotive', 'B2B', 'Creative', 'Finance'].map(cat => (
+              <button
+                key={cat}
+                onClick={() => setCategoryFilter(cat)}
+                className={`px-3 py-1.5 rounded-xs transition-colors ${categoryFilter === cat ? 'bg-gold text-obsidian font-bold shadow-glow-gold' : 'bg-obsidian-card text-textMain hover:bg-gold/20'}`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {filteredClients.map((client) => (
+            <Client3DCard key={client.id} client={client} onSelect={navigateToCaseStudy} />
+          ))}
+        </div>
+      </section>
+
+      {/* PERFORMANCE DATA & CHARTS */}
+      <section id="results" className="py-20 bg-obsidian-card/50 border-y border-gold/20 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <span className="font-mono text-xs uppercase text-gold tracking-widest font-bold">02 / Measurable ROAS & Scale</span>
+            <h2 className="font-serif text-3xl lg:text-5xl font-bold text-textMain">
+              3D Performance Analytics
+            </h2>
+            <p className="text-sm font-sans text-textMuted">
+              Spatial performance modeling mapping campaign ad spend against real lead output and efficiency scores.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h3 className="font-serif font-bold text-xl text-textMain">Campaign Lead Volume (3D Bar Chart)</h3>
+              <PerformanceChart3D />
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-serif font-bold text-xl text-textMain">Efficiency Matrix (3D Scatter Plot)</h3>
+              <ScatterPlot3D />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STRATEGIST PROFILE */}
+      <section id="about" className="py-20 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-5">
+            <GeneratedAvatar className="w-full max-w-md mx-auto h-[480px]" />
+          </div>
+          <div className="lg:col-span-7 space-y-6">
+            <span className="font-mono text-xs uppercase text-emerald tracking-widest font-bold">03 / Strategist Profile</span>
+            <h2 className="font-serif text-3xl lg:text-5xl font-bold text-textMain leading-tight">
+              Deependra Shakya (DS)
+            </h2>
+            <p className="text-base text-gold font-serif italic">
+              “Performance marketing is not about spending more—it is about refining signal over noise until every ad dollar generates measurable revenue.”
+            </p>
+            <p className="text-sm text-textMuted font-sans leading-relaxed">
+              Specializing in paid search, Meta performance funnels, and enterprise lead acquisition. Deependra combines deep analytical rigor with high-converting creative direction to help brands scale systematically across Solar, Automotive, B2B, and E-commerce domains.
+            </p>
+
+            <button onClick={() => setIsContactOpen(true)} className="bg-gold text-obsidian px-6 py-3 rounded-xs font-mono text-xs uppercase tracking-wider font-bold hover:bg-gold-light transition-colors shadow-glow-gold">
+              Partner With Deependra →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-obsidian border-t border-gold/30 pt-16 pb-12 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-obsidian-border pb-12">
+            <div className="md:col-span-8 space-y-3">
+              <span className="font-mono text-xs text-gold uppercase tracking-widest font-bold">Growth Engine</span>
+              <h3 className="font-serif text-3xl md:text-5xl font-bold text-textMain">Ready to Scale Your Performance Campaigns?</h3>
+            </div>
+            <div className="md:col-span-4 flex md:justify-end">
+              <button onClick={() => setIsContactOpen(true)} className="bg-gold hover:bg-gold-light text-obsidian font-mono text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xs shadow-glow-gold transition-colors">
+                Let’s Build Your Next Growth Story →
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between text-xs font-mono text-textMuted">
+            <div>© {new Date().getFullYear()} DS — Deependra Shakya. All rights reserved.</div>
+          </div>
+        </div>
+      </footer>
+
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+    </div>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
