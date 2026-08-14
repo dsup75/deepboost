@@ -1,0 +1,40 @@
+{
+  "name": "deepboost",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "supabase:types": "supabase gen types typescript --project-id YOUR_PROJECT_ID --schema public > types/database.ts"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4",
+    "@supabase/supabase-js": "^2.45.4",
+    "@supabase/ssr": "^0.5.1",
+    "framer-motion": "^11.5.4",
+    "three": "^0.167.1",
+    "@react-three/fiber": "^8.17.6",
+    "@react-three/drei": "^9.114.0",
+    "lucide-react": "^0.445.0",
+    "resend": "^4.0.0",
+    "zod": "^3.23.8",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.167.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.15"
+  }
+}
