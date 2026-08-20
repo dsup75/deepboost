@@ -475,4 +475,1021 @@
     }
 
     .service {
-     
+      background: #090909;
+      padding: 35px;
+      min-height: 270px;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      background: rgba(255,255,255,0.06);
+    }
+
+    .service-number {
+      color: rgba(255,255,255,0.2);
+      font-size: 12px;
+    }
+
+    .service h3 {
+      margin-top: 65px;
+      font-size: 23px;
+    }
+
+    .service p {
+      margin-top: 14px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .about-title {
+      font-size: clamp(55px, 8vw, 100px);
+      line-height: 0.9;
+      letter-spacing: -6px;
+      font-weight: 900;
+    }
+
+    .about-text {
+      color: rgba(255,255,255,0.5);
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    .about-text + .about-text {
+      margin-top: 25px;
+      font-size: 15px;
+    }
+
+    .tools {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .tool {
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50px;
+      color: rgba(255,255,255,0.45);
+      font-size: 12px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      margin-top: 70px;
+    }
+
+    .process {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 20px;
+    }
+
+    .process-number {
+      color: rgba(255,255,255,0.2);
+      font-size: 11px;
+    }
+
+    .process h3 {
+      margin-top: 45px;
+      font-size: 21px;
+    }
+
+    .process p {
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      padding: 160px 30px;
+      overflow: hidden;
+    }
+
+    .cta-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(255,255,255,0.04);
+      filter: blur(120px);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta h2 {
+      margin-top: 25px;
+      font-size: clamp(55px, 9vw, 105px);
+      line-height: 0.9;
+      letter-spacing: -6px;
+      font-weight: 900;
+    }
+
+    .cta p {
+      max-width: 600px;
+      margin: 30px auto;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: auto;
+      padding: 35px 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .footer-logo {
+      width: 100px;
+      max-height: 35px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      color: rgba(255,255,255,0.35);
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav {
+        padding: 17px 20px;
+      }
+
+      nav,
+      .nav-btn {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-content {
+        padding: 140px 20px 70px;
+      }
+
+      .hero h1 {
+        font-size: clamp(55px, 17vw, 85px);
+        letter-spacing: -4px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .container {
+        padding: 90px 20px;
+      }
+
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-card {
+        min-height: 450px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .brand-name {
+        display: none;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .primary-btn,
+      .secondary-btn {
+        text-align: center;
+        width: 100%;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+
+      .work-content h3 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header id="header">
+
+    <div class="nav">
+
+      <a href="#home" class="brand">
+
+        <img
+          class="logo"
+          src="https://drive.google.com/uc?export=view&id=1KMVgxtSUU8watQhacxL0mu7aXYcnr8ID"
+          alt="DeepBoost Logo"
+        />
+
+        <span class="brand-name">
+          DEEPBOOST
+        </span>
+
+      </a>
+
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        href="https://wa.me/917309231937"
+        target="_blank"
+        class="nav-btn"
+      >
+        Let's Talk
+      </a>
+
+      <button class="menu-btn" id="menuBtn">
+        Menu
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section id="home" class="hero">
+
+    <div class="hero-grid"></div>
+    <div class="glow"></div>
+
+    <div class="hero-content">
+
+      <div class="badge">
+        <span class="dot"></span>
+        Performance Marketing • Digital Growth
+      </div>
+
+      <h1>
+        Marketing
+        <br>
+        that <span class="muted">moves.</span>
+      </h1>
+
+      <p class="hero-description">
+        I help businesses grow through performance marketing,
+        Meta Ads, lead generation and creative digital strategies.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#work" class="primary-btn">
+          Explore My Work →
+        </a>
+
+        <a
+          href="https://wa.me/917309231937"
+          target="_blank"
+          class="secondary-btn"
+        >
+          Start a Project
+        </a>
+
+      </div>
+
+      <div class="metrics">
+
+        <div class="metric">
+          <strong>60+</strong>
+          <span>Creative Projects</span>
+        </div>
+
+        <div class="metric">
+          <strong>6+</strong>
+          <span>Brands Worked With</span>
+        </div>
+
+        <div class="metric">
+          <strong>Meta</strong>
+          <span>Ads Expertise</span>
+        </div>
+
+        <div class="metric">
+          <strong>24/7</strong>
+          <span>Growth Mindset</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="container">
+
+      <div class="intro-text">
+
+        DeepBoost is built around one simple idea:
+
+        <strong>
+          marketing should create measurable business growth,
+          not just impressions.
+        </strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WORK -->
+
+  <section id="work">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Selected Work
+      </div>
+
+      <h2 class="section-title">
+        Campaigns built for results.
+      </h2>
+
+      <p class="section-description">
+        A selection of digital marketing and performance campaigns
+        across different industries.
+      </p>
+
+      <div class="filters">
+
+        <button class="filter active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter" data-filter="lead">
+          Lead Generation
+        </button>
+
+        <button class="filter" data-filter="social">
+          Social Media
+        </button>
+
+        <button class="filter" data-filter="digital">
+          Digital Marketing
+        </button>
+
+      </div>
+
+
+      <div class="work-grid">
+
+        <article class="work-card" data-category="lead">
+
+          <span class="work-number">01</span>
+
+          <span class="work-category">
+            Solar • Lead Generation
+          </span>
+
+          <div class="work-content">
+
+            <h3>Solar Ji</h3>
+
+            <div class="work-result">
+              Lead Generation Campaign
+            </div>
+
+            <p>
+              Meta Ads campaigns focused on generating relevant
+              solar enquiries and improving campaign efficiency.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Lead Generation</span>
+              <span class="tag">Performance</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card" data-category="lead">
+
+          <span class="work-number">02</span>
+
+          <span class="work-category">
+            Automotive
+          </span>
+
+          <div class="work-content">
+
+            <h3>Sahu Motors</h3>
+
+            <div class="work-result">
+              Local Customer Acquisition
+            </div>
+
+            <p>
+              Performance-focused advertising designed to generate
+              local enquiries and improve dealership visibility.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Local Leads</span>
+              <span class="tag">Campaign Strategy</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card" data-category="digital">
+
+          <span class="work-number">03</span>
+
+          <span class="work-category">
+            E-commerce
+          </span>
+
+          <div class="work-content">
+
+            <h3>GG Organic</h3>
+
+            <div class="work-result">
+              Digital Growth Campaign
+            </div>
+
+            <p>
+              Digital advertising and social media strategy focused
+              on reaching high-intent audiences.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Audience Targeting</span>
+              <span class="tag">Growth</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card" data-category="lead">
+
+          <span class="work-number">04</span>
+
+          <span class="work-category">
+            Solar
+          </span>
+
+          <div class="work-content">
+
+            <h3>Kalpana Solar</h3>
+
+            <div class="work-result">
+              Lead Generation
+            </div>
+
+            <p>
+              Campaign strategy created around solar products,
+              awareness and customer enquiries.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Lead Generation</span>
+              <span class="tag">Creative Strategy</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card" data-category="digital">
+
+          <span class="work-number">05</span>
+
+          <span class="work-category">
+            Digital Marketing
+          </span>
+
+          <div class="work-content">
+
+            <h3>GDFL</h3>
+
+            <div class="work-result">
+              Campaign Management
+            </div>
+
+            <p>
+              Performance marketing support covering campaign
+              coordination, creatives and digital growth.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Campaign Management</span>
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Analytics</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="work-card" data-category="social">
+
+          <span class="work-number">06</span>
+
+          <span class="work-category">
+            Creative
+          </span>
+
+          <div class="work-content">
+
+            <h3>Cult Canvas</h3>
+
+            <div class="work-result">
+              Social Media Growth
+            </div>
+
+            <p>
+              Creative-led digital marketing support designed
+              to build a stronger online presence.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Social Media</span>
+              <span class="tag">Creative</span>
+              <span class="tag">Branding</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services" class="section-dark">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        What I Do
+      </div>
+
+      <h2 class="section-title">
+        Everything your digital growth needs.
+      </h2>
+
+      <p class="section-description">
+        From strategy to execution, focused on the things
+        that actually move the needle.
+      </p>
+
+      <div class="service-grid">
+
+        <div class="service">
+          <span class="service-number">01</span>
+          <h3>Meta Ads</h3>
+          <p>
+            Performance-focused Facebook and Instagram campaigns
+            built around measurable business goals.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">02</span>
+          <h3>Lead Generation</h3>
+          <p>
+            Campaigns designed to turn attention into qualified
+            enquiries, calls and WhatsApp conversations.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">03</span>
+          <h3>Social Media</h3>
+          <p>
+            Strategic content planning, posting and account
+            management for a consistent brand presence.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">04</span>
+          <h3>Creative Strategy</h3>
+          <p>
+            Ad creatives and marketing angles designed to capture
+            attention and improve campaign performance.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">05</span>
+          <h3>Google Ads</h3>
+          <p>
+            Search-focused advertising designed to capture people
+            already looking for your product or service.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">06</span>
+          <h3>Campaign Analytics</h3>
+          <p>
+            Track important metrics and use campaign data to
+            continuously improve marketing decisions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            About DeepBoost
+          </div>
+
+          <h2 class="about-title">
+            Young.
+            <br>
+            <span class="muted">Digital.</span>
+            <br>
+            Hungry.
+          </h2>
+
+        </div>
+
+        <div>
+
+          <p class="about-text">
+            I'm a digital marketer focused on helping businesses
+            use advertising and social media more effectively.
+          </p>
+
+          <p class="about-text">
+            My approach combines creative thinking, performance
+            marketing and data-driven decision making. Instead of
+            chasing vanity metrics, I focus on building campaigns
+            around real business objectives.
+          </p>
+
+          <div class="tools">
+            <span class="tool">Meta Ads Manager</span>
+            <span class="tool">Google Ads</span>
+            <span class="tool">Canva</span>
+            <span class="tool">Google Analytics</span>
+            <span class="tool">WordPress</span>
+            <span class="tool">Excel</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section class="section-dark">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Process
+      </div>
+
+      <h2 class="section-title">
+        Simple. Strategic. Repeatable.
+      </h2>
+
+      <p class="section-description">
+        A straightforward process designed to move from idea
+        to measurable growth.
+      </p>
+
+      <div class="process-grid">
+
+        <div class="process">
+          <span class="process-number">01</span>
+          <h3>Understand</h3>
+          <p>
+            Understand your business, audience and goals.
+          </p>
+        </div>
+
+        <div class="process">
+          <span class="process-number">02</span>
+          <h3>Strategize</h3>
+          <p>
+            Create the right offer, funnel and campaign strategy.
+          </p>
+        </div>
+
+        <div class="process">
+          <span class="process-number">03</span>
+          <h3>Launch</h3>
+          <p>
+            Build, launch and monitor campaigns.
+          </p>
+        </div>
+
+        <div class="process">
+          <span class="process-number">04</span>
+          <h3>Optimize</h3>
+          <p>
+            Use data to improve performance continuously.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section id="contact" class="cta">
+
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+
+      <div class="eyebrow">
+        Have a growth problem?
+      </div>
+
+      <h2>
+        Let's build
+        <br>
+        something <span class="muted">great.</span>
+      </h2>
+
+      <p>
+        Tell me about your business, your goal and where you're stuck.
+        Let's figure out the next move.
+      </p>
+
+      <a
+        href="https://wa.me/917309231937"
+        target="_blank"
+        class="primary-btn"
+      >
+        Start a Conversation →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <img
+          class="footer-logo"
+          src="https://drive.google.com/uc?export=view&id=1KMVgxtSUU8watQhacxL0mu7aXYcnr8ID"
+          alt="DeepBoost"
+        />
+
+        <span class="copyright">
+          © <span id="year"></span> DeepBoost
+        </span>
+
+      </div>
+
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    /* Navbar */
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 30) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+
+    });
+
+
+    /* Mobile Menu */
+
+    const menuBtn = document.getElementById("menuBtn");
+
+    menuBtn.addEventListener("click", () => {
+
+      const nav = document.querySelector("nav");
+
+      if (nav.style.display === "flex") {
+
+        nav.style.display = "none";
+
+      } else {
+
+        nav.style.display = "flex";
+        nav.style.position = "absolute";
+        nav.style.top = "75px";
+        nav.style.left = "20px";
+        nav.style.right = "20px";
+        nav.style.padding = "25px";
+        nav.style.flexDirection = "column";
+        nav.style.background = "rgba(10,10,10,.96)";
+        nav.style.border = "1px solid rgba(255,255,255,.1)";
+        nav.style.borderRadius = "20px";
+        nav.style.backdropFilter = "blur(20px)";
+
+      }
+
+    });
+
+
+    /* Portfolio Filters */
+
+    const filters = document.querySelectorAll(".filter");
+    const cards = document.querySelectorAll(".work-card");
+
+    filters.forEach(filter => {
+
+      filter.addEventListener("click", () => {
+
+        filters.forEach(f => {
+          f.classList.remove("active");
+        });
+
+        filter.classList.add("active");
+
+        const category = filter.dataset.filter;
+
+        cards.forEach(card => {
+
+          if (
+            category === "all" ||
+            card.dataset.category === category
+          ) {
+
+            card.style.display = "block";
+
+          } else {
+
+            card.style.display = "none";
+
+          }
+
+        });
+
+      });
+
+    });
+
+
+    /* Current Year */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
