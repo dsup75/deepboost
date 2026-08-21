@@ -3,134 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeepBoost | Meta Ads & Lead Generation Growth Partner</title>
-  <meta name="description" content="Helping Indian businesses scale with predictable, high-converting Meta Ads and lead generation funnels." />
+  <title>DeepBoost | High-Performance Meta Ads & Growth Partner</title>
+  <meta name="description" content="Helping high-growth businesses scale with predictable, high-converting Meta Ads and lead generation funnels." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter / Plus Jakarta Sans -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <!-- Chart.js for Performance Graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .gradient-text {
-      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #00f2fe 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .gradient-bg {
-      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #0284c7 100%);
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
 
   <!-- Navbar -->
-  <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-950/85 border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30">
-          DB
-        </div>
-        <span class="text-xl font-extrabold tracking-tight text-white">Deep<span class="text-indigo-400">Boost</span></span>
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="DeepBoost Logo" class="w-10 h-10 rounded-full object-cover border border-cyan-500/40 shadow-md shadow-cyan-500/20" onerror="this.src='https://placehold.co/100x100/0b1120/00d2ff?text=DB'">
+        <span class="text-xl font-extrabold tracking-tight text-white">Deep<span class="text-cyan-400">Boost</span></span>
       </div>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#services" class="hover:text-indigo-400 transition">Services</a>
-        <a href="#case-studies" class="hover:text-indigo-400 transition">Case Studies</a>
-        <a href="#process" class="hover:text-indigo-400 transition">Our Process</a>
-        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+        <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+        <a href="#analytics" class="hover:text-cyan-400 transition">Performance Graph</a>
+        <a href="#case-studies" class="hover:text-cyan-400 transition">Case Studies</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
 
-      <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20I%20want%20a%20free%20Meta%20Ads%20audit%20for%20my%20business." target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold transition shadow-md shadow-indigo-600/30">
-        Claim Free Audit
-      </a>
+      <div class="flex items-center gap-3">
+        <!-- Admin Trigger Button -->
+        <button onclick="openAdminModal()" class="px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-900/80 hover:bg-slate-800 text-xs font-semibold text-slate-300 hover:text-white transition">
+          Admin Portal
+        </button>
+
+        <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20I%20want%20a%20free%20Meta%20Ads%20audit%20for%20my%20business." target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold transition shadow-md shadow-cyan-600/30">
+          Claim Free Audit
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden">
+  <section class="relative pt-16 pb-16 md:pt-24 md:pb-20 overflow-hidden">
     <div class="absolute inset-0 -z-10 flex items-center justify-center">
-      <div class="w-[600px] h-[600px] bg-indigo-600/15 blur-[140px] rounded-full pointer-events-none"></div>
+      <div class="w-[600px] h-[600px] bg-cyan-600/15 blur-[140px] rounded-full pointer-events-none"></div>
     </div>
     
     <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-6">
-        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
-        Meta Ads & Lead Generation Growth Partner
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-6">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        Grow • Engage • Convert
       </div>
       
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-tight mb-6">
-        Stop Wasting Money on Ads.<br />
-        Get <span class="gradient-text">Qualified Inquiries</span> That Convert.
+        Creative Designs & Meta Ads<br />
+        That <span class="gradient-text">Deliver Measurable Results</span>.
       </h1>
       
       <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-        We help Indian businesses build high-converting Meta Ad funnels, filter out junk leads, lower CPL, and drive measurable revenue.
+        We help businesses eliminate ad budget wastage, build intent-driven funnels, lower CPL, and drive genuine revenue.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20I%20want%20a%20free%20Meta%20Ads%20audit%20for%20my%20business." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl gradient-bg text-white font-bold text-base shadow-xl shadow-indigo-500/25 hover:opacity-95 transition flex items-center justify-center gap-2">
-          <span>Book 15-Min Free Audit</span>
+        <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20I%20want%20a%20free%20Meta%20Ads%20audit%20for%20my%20business." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-base shadow-xl shadow-cyan-500/25 hover:opacity-95 transition flex items-center justify-center gap-2">
+          <span>Book 15-Min Strategy Audit</span>
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
         <a href="#case-studies" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 font-semibold text-base transition">
-          View Case Studies
+          View Live Campaigns
         </a>
       </div>
 
-      <!-- Trust Badges / Stats -->
+      <!-- Trust Metrics -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-16 pt-12 border-t border-slate-800/80">
         <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60">
-          <div class="text-2xl sm:text-3xl font-extrabold text-white">₹100–₹150</div>
-          <div class="text-xs sm:text-sm text-slate-400 mt-1">Average Qualified CPL</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">40–60%</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">CPL Reduction</div>
         </div>
         <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60">
-          <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">Google & Meta</div>
-          <div class="text-xs sm:text-sm text-slate-400 mt-1">Certified Marketer</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">Certified</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">Google & Meta Specialist</div>
         </div>
         <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60">
-          <div class="text-2xl sm:text-3xl font-extrabold text-white">100% Filtered</div>
-          <div class="text-xs sm:text-sm text-slate-400 mt-1">Zero Junk Lead Focus</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">100% Filtered</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">High Intent Leads</div>
         </div>
         <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60">
-          <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">Instant Sync</div>
-          <div class="text-xs sm:text-sm text-slate-400 mt-1">WhatsApp & CRM Ready</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">Instant Sync</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1">WhatsApp CRM Automation</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Case Studies Section -->
-  <section id="case-studies" class="py-20 bg-slate-900/40 border-y border-slate-800/80">
+  <!-- Performance Analytics & Live Graph Section -->
+  <section id="analytics" class="py-16 bg-slate-900/30 border-y border-slate-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Proven Track Record</h2>
-        <p class="text-3xl font-extrabold text-white">Real Client Campaigns & Results</p>
+      <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-6">
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-1">Data-Driven Execution</h2>
+          <p class="text-3xl font-extrabold text-white">Campaign Optimization Graph</p>
+          <p class="text-sm text-slate-400 mt-1">Real-time breakdown: How our funnel tweaks cut CPL while scaling qualified lead volume.</p>
+        </div>
+        <div class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-2 rounded-xl text-xs">
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-cyan-400 inline-block"></span> Qualified Leads</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-400 inline-block"></span> CPL (Cost Per Lead)</span>
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Solar Ji Case Study -->
-        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition flex flex-col justify-between">
+      <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl shadow-xl">
+        <canvas id="performanceChart" height="110"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Case Studies & Brand Section -->
+  <section id="case-studies" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2">Featured Projects</h2>
+          <p class="text-3xl font-extrabold text-white">Client Success Stories</p>
+        </div>
+        <button onclick="openAdminModal()" class="text-xs font-semibold px-3 py-2 rounded-lg bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/50 transition">
+          + Add New Brand Data (Admin)
+        </button>
+      </div>
+
+      <!-- Dynamic Cards Container -->
+      <div id="brandsContainer" class="grid md:grid-cols-2 gap-8">
+        <!-- Default Solar Ji -->
+        <div class="p-8 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/40 transition flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Clean Energy / Solar</span>
-              <span class="text-xs text-slate-400 font-medium">Meta Lead Generation</span>
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Clean Energy & Solar</span>
+              <span class="text-xs text-slate-400 font-medium">Meta Ads Lead Gen</span>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-3">Solar Ji</h3>
+            <h3 class="text-2xl font-bold text-white mb-2">Solar Ji</h3>
             <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-              Targeted residential and commercial rooftop solar installations with hyper-local pincode targeting and high-intent qualifying questions.
+              Targeted residential & MSME rooftop installations with hyper-local pin-code targeting and custom intent-qualifying forms.
             </p>
             <div class="space-y-2 border-t border-slate-800 pt-4 mb-6">
               <div class="flex justify-between text-sm">
-                <span class="text-slate-400">Targeting Strategy</span>
-                <span class="text-slate-200 font-medium">Homeowners & MSME Units</span>
+                <span class="text-slate-400">Target Audience</span>
+                <span class="text-slate-200 font-medium">Homeowners & Commercial Units</span>
               </div>
               <div class="flex justify-between text-sm">
-                <span class="text-slate-400">Funnel Type</span>
-                <span class="text-slate-200 font-medium">Instant Forms + WhatsApp Automation</span>
+                <span class="text-slate-400">Strategy</span>
+                <span class="text-slate-200 font-medium">Instant Form + Qualification Filter</span>
               </div>
               <div class="flex justify-between text-sm">
                 <span class="text-slate-400">Outcome</span>
@@ -138,39 +172,39 @@
               </div>
             </div>
           </div>
-          <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20tell%20me%20more%20about%20the%20Solar%20Ji%20campaign%20strategy." target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
-            Request Full Breakdown &rarr;
+          <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20tell%20me%20more%20about%20the%20Solar%20Ji%20campaign." target="_blank" class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+            Request Strategy Teardown &rarr;
           </a>
         </div>
 
-        <!-- Sahu Motors Case Study -->
-        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition flex flex-col justify-between">
+        <!-- Default Sahu Motors -->
+        <div class="p-8 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/40 transition flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">Automotive / EV & Vehicles</span>
-              <span class="text-xs text-slate-400 font-medium">Local Footfall & Test Drives</span>
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Automotive & EV</span>
+              <span class="text-xs text-slate-400 font-medium">Local Footfall & Inquiries</span>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-3">Sahu Motors</h3>
+            <h3 class="text-2xl font-bold text-white mb-2">Sahu Motors</h3>
             <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-              Designed compelling offer creatives and direct enquiry funnels to drive qualified walk-ins and local customer test drive bookings.
+              Engineered compelling promotional creatives and direct enquiry funnels to maximize showroom walk-ins and test drive bookings.
             </p>
             <div class="space-y-2 border-t border-slate-800 pt-4 mb-6">
               <div class="flex justify-between text-sm">
-                <span class="text-slate-400">Campaign Focus</span>
-                <span class="text-slate-200 font-medium">Local Radius & Interest Retargeting</span>
+                <span class="text-slate-400">Target Radius</span>
+                <span class="text-slate-200 font-medium">Regional 25km Radius & Commuters</span>
               </div>
               <div class="flex justify-between text-sm">
-                <span class="text-slate-400">Creative Angle</span>
-                <span class="text-slate-200 font-medium">Festive Offer & EMI Hook</span>
+                <span class="text-slate-400">Hook Angle</span>
+                <span class="text-slate-200 font-medium">Festive Offer & EMI Schemes</span>
               </div>
               <div class="flex justify-between text-sm">
                 <span class="text-slate-400">Outcome</span>
-                <span class="text-emerald-400 font-semibold">Increased Showroom Enquiries</span>
+                <span class="text-emerald-400 font-semibold">Steady Showroom Enquiries</span>
               </div>
             </div>
           </div>
-          <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20tell%20me%20more%20about%20the%20Sahu%20Motors%20campaign." target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
-            Request Full Breakdown &rarr;
+          <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20tell%20me%20more%20about%20the%20Sahu%20Motors%20campaign." target="_blank" class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+            Request Strategy Teardown &rarr;
           </a>
         </div>
       </div>
@@ -178,18 +212,16 @@
   </section>
 
   <!-- Core Services Section -->
-  <section id="services" class="py-20">
+  <section id="services" class="py-20 bg-slate-900/30 border-t border-slate-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Capabilities</h2>
-        <p class="text-3xl font-extrabold text-white">Everything You Need to Scale Inquiries</p>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2">Core Services</h2>
+        <p class="text-3xl font-extrabold text-white">Full-Stack Digital Growth</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center font-bold mb-5">
-            01
-          </div>
+          <div class="w-12 h-12 rounded-xl bg-cyan-600/20 text-cyan-400 flex items-center justify-center font-bold mb-5">01</div>
           <h3 class="text-xl font-bold text-white mb-2">Meta Ads Management</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
             Full campaign architecture on Ads Manager. Custom audience layering, lookalikes, A/B ad creative testing, and daily CPL optimization.
@@ -197,19 +229,15 @@
         </div>
 
         <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center font-bold mb-5">
-            02
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">Lead Funnel & Filtering</h3>
+          <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center font-bold mb-5">02</div>
+          <h3 class="text-xl font-bold text-white mb-2">Funnel & Lead Filtering</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
             Stop junk calls. We add intent-based qualification questions and automated WhatsApp alerts so you only talk to real buyers.
           </p>
         </div>
 
         <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-bold mb-5">
-            03
-          </div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-bold mb-5">03</div>
           <h3 class="text-xl font-bold text-white mb-2">Creative & Content Design</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
             Clean, scroll-stopping visual ad creatives and persuasive ad copy tailored specifically to your target customer's pain points.
@@ -222,20 +250,20 @@
   <!-- Contact & CTA Box -->
   <section id="contact" class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="p-8 sm:p-12 rounded-3xl gradient-bg text-center relative overflow-hidden shadow-2xl shadow-indigo-600/30">
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-cyan-600 via-blue-600 to-cyan-700 text-center relative overflow-hidden shadow-2xl shadow-cyan-600/30">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
           Ready to Get More Inquiries This Week?
         </h2>
-        <p class="text-indigo-100 max-w-xl mx-auto mb-8 text-sm sm:text-base">
-          Send a quick message on WhatsApp or email. I will audit your current setup or outline the exact funnel strategy for your business.
+        <p class="text-cyan-100 max-w-xl mx-auto mb-8 text-sm sm:text-base">
+          Send a direct message on WhatsApp or email. I will audit your current setup or outline the exact funnel strategy for your brand.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20I%20want%20to%20scale%20my%20business%20leads%20with%20DeepBoost." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-slate-950 font-bold hover:bg-slate-100 transition shadow-lg">
-            <span>Chat on WhatsApp (+91 7309231937)</span>
+            <span>Connect on WhatsApp</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
           <a href="mailto:Deepboost1@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-900 text-white font-semibold border border-white/20 transition">
-            <span>Email: Deepboost1@gmail.com</span>
+            <span>Email DeepBoost</span>
           </a>
         </div>
       </div>
@@ -245,20 +273,238 @@
   <!-- Footer -->
   <footer class="border-t border-slate-800/80 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-xs sm:text-sm">
-      <p>© 2024 DeepBoost by Deependra Shakya. Built for high-growth businesses.</p>
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="DeepBoost" class="w-6 h-6 rounded-full" onerror="this.style.display='none'">
+        <span>© 2026 DeepBoost by Deependra Shakya. All rights reserved.</span>
+      </div>
       <div class="flex items-center gap-6">
-        <a href="mailto:Deepboost1@gmail.com" class="hover:text-indigo-400 transition">Deepboost1@gmail.com</a>
-        <a href="https://wa.me/917309231937" target="_blank" class="hover:text-emerald-400 transition">+91 7309231937</a>
+        <a href="mailto:Deepboost1@gmail.com" class="hover:text-cyan-400 transition">Email Us</a>
+        <a href="https://wa.me/917309231937" target="_blank" class="hover:text-emerald-400 transition">Direct WhatsApp Link</a>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20came%20across%20DeepBoost.%20Let's%20discuss%20Meta%20Ads!" target="_blank" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-600/40 transition transform hover:scale-105 flex items-center justify-center" title="Chat on WhatsApp">
+  <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20came%20across%20DeepBoost.%20Let's%20discuss%20Meta%20Ads!" target="_blank" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-600/40 transition transform hover:scale-105 flex items-center justify-center" title="Chat with Deependra">
     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
     </svg>
   </a>
+
+  <!-- ==================== ADMIN MODAL ==================== -->
+  <div id="adminModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-lg p-6 shadow-2xl relative">
+      
+      <!-- Close Button -->
+      <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+
+      <!-- Step 1: Login Form -->
+      <div id="adminLoginSection">
+        <h3 class="text-xl font-bold text-white mb-2">DeepBoost Admin Login</h3>
+        <p class="text-xs text-slate-400 mb-6">Enter authorized credentials to manage client brand records.</p>
+        
+        <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Email</label>
+            <input type="email" id="adminEmail" required placeholder="deepboost1@gmail.com" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Password</label>
+            <input type="password" id="adminPass" required placeholder="••••••••" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500">
+          </div>
+          <p id="loginError" class="text-xs text-rose-400 hidden">Invalid email or password.</p>
+          <button type="submit" class="w-full py-2.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm transition">
+            Log In to Portal
+          </button>
+        </form>
+      </div>
+
+      <!-- Step 2: Add Brand Form (Protected) -->
+      <div id="adminDashboardSection" class="hidden">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+          <div>
+            <h3 class="text-lg font-bold text-white">Add New Client Brand</h3>
+            <p class="text-xs text-emerald-400">Authenticated: Deependra Shakya</p>
+          </div>
+          <button onclick="adminLogout()" class="text-xs text-rose-400 hover:underline">Log Out</button>
+        </div>
+
+        <form onsubmit="handleAddBrand(event)" class="space-y-3">
+          <div>
+            <label class="block text-xs text-slate-300 mb-1">Brand Name</label>
+            <input type="text" id="brandName" required placeholder="e.g. Acme Tech" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs">
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs text-slate-300 mb-1">Industry / Category</label>
+              <input type="text" id="brandCategory" required placeholder="e.g. Real Estate" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs">
+            </div>
+            <div>
+              <label class="block text-xs text-slate-300 mb-1">Service Provided</label>
+              <input type="text" id="brandService" required placeholder="e.g. Meta Ads & Funnel" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-300 mb-1">Brief Description / Strategy</label>
+            <textarea id="brandDesc" rows="2" required placeholder="Brief breakdown of campaign strategy..." class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs"></textarea>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs text-slate-300 mb-1">Target / Strategy Focus</label>
+              <input type="text" id="brandTarget" required placeholder="e.g. Pan India / HNIs" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs">
+            </div>
+            <div>
+              <label class="block text-xs text-slate-300 mb-1">Key Outcome</label>
+              <input type="text" id="brandOutcome" required placeholder="e.g. 3.8x ROI / ₹90 CPL" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs">
+            </div>
+          </div>
+          <button type="submit" class="w-full py-2.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs transition mt-2">
+            Save & Publish Live Brand Card
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC (Graph + Admin Portal) -->
+  <script>
+    // 1. Chart.js Performance Graph Rendering
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Week 1 (Initial Setup)', 'Week 2 (Creative Testing)', 'Week 3 (Funnel Filter)', 'Week 4 (Scaling)', 'Week 5 (Optimized)'],
+        datasets: [
+          {
+            label: 'Qualified Inquiries / Leads',
+            data: [18, 42, 95, 160, 240],
+            borderColor: '#22d3ee',
+            backgroundColor: 'rgba(34, 211, 238, 0.1)',
+            fill: true,
+            tension: 0.4,
+            pointRadius: 4,
+          },
+          {
+            label: 'Cost Per Lead (CPL in ₹)',
+            data: [320, 240, 150, 120, 95],
+            borderColor: '#34d399',
+            backgroundColor: 'transparent',
+            borderDash: [5, 5],
+            tension: 0.4,
+            pointRadius: 4,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+          y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    });
+
+    // 2. Admin Modal Logic
+    const adminModal = document.getElementById('adminModal');
+    const adminLoginSection = document.getElementById('adminLoginSection');
+    const adminDashboardSection = document.getElementById('adminDashboardSection');
+    const loginError = document.getElementById('loginError');
+
+    function openAdminModal() {
+      adminModal.classList.remove('hidden');
+      adminModal.classList.add('flex');
+    }
+
+    function closeAdminModal() {
+      adminModal.classList.add('hidden');
+      adminModal.classList.remove('flex');
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById('adminEmail').value.trim();
+      const pass = document.getElementById('adminPass').value.trim();
+
+      if (email === 'deepboost1@gmail.com' && pass === 'DeepBoost@2026') {
+        loginError.classList.add('hidden');
+        adminLoginSection.classList.add('hidden');
+        adminDashboardSection.classList.remove('hidden');
+      } else {
+        loginError.classList.remove('hidden');
+      }
+    }
+
+    function adminLogout() {
+      adminDashboardSection.classList.add('hidden');
+      adminLoginSection.classList.remove('hidden');
+      document.getElementById('adminEmail').value = '';
+      document.getElementById('adminPass').value = '';
+    }
+
+    // 3. Dynamic Brand Addition with LocalStorage Persistence
+    function loadSavedBrands() {
+      const savedBrands = JSON.parse(localStorage.getItem('deepboost_custom_brands') || '[]');
+      savedBrands.forEach(brand => renderBrandCard(brand));
+    }
+
+    function renderBrandCard(brand) {
+      const container = document.getElementById('brandsContainer');
+      const card = document.createElement('div');
+      card.className = "p-8 rounded-2xl bg-slate-900/70 border border-cyan-500/40 hover:border-cyan-400 transition flex flex-col justify-between";
+      card.innerHTML = `
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">${brand.category}</span>
+            <span class="text-xs text-slate-400 font-medium">${brand.service}</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">${brand.name}</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">${brand.desc}</p>
+          <div class="space-y-2 border-t border-slate-800 pt-4 mb-6">
+            <div class="flex justify-between text-sm">
+              <span class="text-slate-400">Target Focus</span>
+              <span class="text-slate-200 font-medium">${brand.target}</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-slate-400">Key Outcome</span>
+              <span class="text-emerald-400 font-semibold">${brand.outcome}</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/917309231937?text=Hi%20Deependra,%20tell%20me%20more%20about%20the%20${encodeURIComponent(brand.name)}%20campaign." target="_blank" class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+          Request Strategy Teardown &rarr;
+        </a>
+      `;
+      container.appendChild(card);
+    }
+
+    function handleAddBrand(e) {
+      e.preventDefault();
+      const newBrand = {
+        name: document.getElementById('brandName').value.trim(),
+        category: document.getElementById('brandCategory').value.trim(),
+        service: document.getElementById('brandService').value.trim(),
+        desc: document.getElementById('brandDesc').value.trim(),
+        target: document.getElementById('brandTarget').value.trim(),
+        outcome: document.getElementById('brandOutcome').value.trim(),
+      };
+
+      const savedBrands = JSON.parse(localStorage.getItem('deepboost_custom_brands') || '[]');
+      savedBrands.push(newBrand);
+      localStorage.setItem('deepboost_custom_brands', JSON.stringify(savedBrands));
+
+      renderBrandCard(newBrand);
+      closeAdminModal();
+      e.target.reset();
+      alert('Brand case study added successfully!');
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', loadSavedBrands);
+  </script>
 
 </body>
 </html>
